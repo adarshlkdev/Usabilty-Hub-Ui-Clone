@@ -1,0 +1,122 @@
+@media only screen and (max-width:992px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-links{
+      position: absolute;
+      background-color: #fff;
+      left: -100%;
+      top: 100%;
+      width: 100%;
+      padding-block: 20px;
+      transition:all 0.3s ease-in-out;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links ul{
+        flex-direction: column;
+    }
+    .main-nav{
+        overflow: initial;
+    }
+    .examples-area{
+        gap: 20px;
+    }
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+
+    }
+    .cta-section{
+        padding-block: 50px;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.4rem
+    }
+    h4{
+        font-size: 1rem;
+    }
+
+    .primary-btn{
+        width: 100%;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .company-logo img{
+        width: 130px;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .features-card{
+      min-width: calc(50% - 10px);
+    }
+    .card-text{
+        font-size: 0.9rem;
+    }
+    .top-banner{
+        background-size: cover;
+    }
+    .big-feature-container , #second-big-feature-section{
+        flex-direction:column;
+    }
+    .examples-header{
+      text-align: center;
+    }
+    .cta-section-container{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .link-column{
+        align-items: stretch;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:479px){
+    :root{
+        --padding-inline-section:8px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .features-card{
+        min-width: 100%;
+
+    }
+    .examples-card{
+        width: 100%;
+    }
+
+   .feature-description h3{
+    align-items:  center;
+   }
+}
